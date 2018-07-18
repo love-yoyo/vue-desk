@@ -1,5 +1,5 @@
 <template>
-  <div id="wrapper">
+  <div>
     <img id="logo" src="~@/assets/logo.png" alt="electron-vue">
     <main>
       <div class="left-side">
@@ -30,15 +30,16 @@
 </template>
 
 <script>
-  import SystemInformation from './LandingPage/SystemInformation'
+/* eslint indent: "off" */
+import SystemInformation from './LandingPage/SystemInformation'
 
-  export default {
+export default {
     name: 'landing-page',
     components: { SystemInformation },
     methods: {
-      open (link) {
-        this.$electron.shell.openExternal(link)
-      }
+        open (link) {
+            this.$electron.shell.openExternal(link)
+        }
     }
   }
 </script>

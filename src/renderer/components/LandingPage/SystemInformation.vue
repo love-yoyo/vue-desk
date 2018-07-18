@@ -31,6 +31,7 @@
 </template>
 
 <script>
+  /* eslint indent: "off" */
   export default {
     data () {
       return {
